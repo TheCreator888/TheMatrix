@@ -1,0 +1,64 @@
+
+body{
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+
+video{
+    height: 100vh;
+    width: auto;
+    min-width: 100vw;
+    position:fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+main{
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 400px; 
+    height: auto;
+    top: 18vh;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+div{
+    
+}
+h1{
+    color: #008F11;
+
+}
+input{
+    width: 82%;
+    line-height: 5em;
+    margin-bottom: 15px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    color: #008F11;
+    transition: 0.2s ease-out;
+    border: black;
+}
+button:hover{
+    color: white;
+    background-color: #008F11;
+    transform: scale(115%);
+}
+#bottom{
+    margin-top: 40px;
+}
+#response{
+    display: none;
+}
