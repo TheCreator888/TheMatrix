@@ -24,33 +24,52 @@ function getMsg(){
     console.log(originalMsg)
     originalMsg = originalMsg.toString();
 
+    originalMsg = originalMsg.replaceAll('?', '⏃');
+    originalMsg = originalMsg.replaceAll('!', 'Θ');
+    originalMsg = originalMsg.replaceAll('.', 'Λ');
+    originalMsg = originalMsg.replaceAll('1', 'Ξ');
+    originalMsg = originalMsg.replaceAll('2', 'Σ');
+    originalMsg = originalMsg.replaceAll('3', 'Υ');
+    originalMsg = originalMsg.replaceAll('4', 'Φ');
+    originalMsg = originalMsg.replaceAll('5', 'Ψ');
+    originalMsg = originalMsg.replaceAll('6', 'Ω');
+    originalMsg = originalMsg.replaceAll('7', 'α');
+    originalMsg = originalMsg.replaceAll('8', 'β');
+    originalMsg = originalMsg.replaceAll('9', 'ζ');
+    originalMsg = originalMsg.replaceAll('0', '⊕'); 
+    originalMsg = originalMsg.replaceAll('"', '⎐');
+    originalMsg = originalMsg.replaceAll('(', '⍙');  
+    originalMsg = originalMsg.replaceAll(')', '⌇');
+    originalMsg = originalMsg.replaceAll(',', '⏁'); 
 
-    originalMsg = originalMsg.replaceAll('a', ';');
-    originalMsg = originalMsg.replaceAll('b', '}');
-    originalMsg = originalMsg.replaceAll('c', '{');
-    originalMsg = originalMsg.replaceAll('d', '§');
-    originalMsg = originalMsg.replaceAll('e', '=');
-    originalMsg = originalMsg.replaceAll('f', '+');
-    originalMsg = originalMsg.replaceAll('g', '_');
-    originalMsg = originalMsg.replaceAll('h', '-');
-    originalMsg = originalMsg.replaceAll('i', ']');
-    originalMsg = originalMsg.replaceAll('j', ':');
-    originalMsg = originalMsg.replaceAll('k', '*');
-    originalMsg = originalMsg.replaceAll('l', '&');
-    originalMsg = originalMsg.replaceAll('m', '%');
-    originalMsg = originalMsg.replaceAll('n', '$');
-    originalMsg = originalMsg.replaceAll('o', '#');
-    originalMsg = originalMsg.replaceAll('p', '@');
-    originalMsg = originalMsg.replaceAll('q', '±');
-    originalMsg = originalMsg.replaceAll('r', '9');
-    originalMsg = originalMsg.replaceAll('s', '8');
-    originalMsg = originalMsg.replaceAll('t', '7');
-    originalMsg = originalMsg.replaceAll('u', '6');
-    originalMsg = originalMsg.replaceAll('v', '5');
-    originalMsg = originalMsg.replaceAll('w', '4');
-    originalMsg = originalMsg.replaceAll('x', '3');
-    originalMsg = originalMsg.replaceAll('y', '2');
-    originalMsg = originalMsg.replaceAll('z', '1');
+    //old
+
+    originalMsg = originalMsg.replaceAll('a', '⏈');
+    originalMsg = originalMsg.replaceAll('b', 'ク');
+    originalMsg = originalMsg.replaceAll('c', 'ミ');
+    originalMsg = originalMsg.replaceAll('d', 'ㄓ');
+    originalMsg = originalMsg.replaceAll('e', 'ᆕ');
+    originalMsg = originalMsg.replaceAll('f', '₿');
+    originalMsg = originalMsg.replaceAll('g', 'ᘡ');
+    originalMsg = originalMsg.replaceAll('h', 'Ⴟ');
+    originalMsg = originalMsg.replaceAll('i', 'ૐ');
+    originalMsg = originalMsg.replaceAll('j', '૪');
+    originalMsg = originalMsg.replaceAll('k', 'ਲ');
+    originalMsg = originalMsg.replaceAll('l', '֎');
+    originalMsg = originalMsg.replaceAll('m', '֏');
+    originalMsg = originalMsg.replaceAll('n', '҂');
+    originalMsg = originalMsg.replaceAll('o', 'Ѿ');
+    originalMsg = originalMsg.replaceAll('p', 'Ѫ');
+    originalMsg = originalMsg.replaceAll('q', 'Ѧ');
+    originalMsg = originalMsg.replaceAll('r', 'Ͽ');
+    originalMsg = originalMsg.replaceAll('s', 'Ϫ');
+    originalMsg = originalMsg.replaceAll('t', 'ϟ');
+    originalMsg = originalMsg.replaceAll('u', 'Ϋ');
+    originalMsg = originalMsg.replaceAll('v', 'ʬ');
+    originalMsg = originalMsg.replaceAll('w', 'ʕ');
+    originalMsg = originalMsg.replaceAll('x', 'ʆ');
+    originalMsg = originalMsg.replaceAll('y', 'Ƹ');
+    originalMsg = originalMsg.replaceAll('z', 'ƕ');
 
     
     originalMsg = originalMsg.replaceAll('A', ';');
@@ -95,32 +114,33 @@ function decodeMsg(){
 
     secretMsg = secretMsg.replaceAll('[', ' ');
 
-    secretMsg = secretMsg.replaceAll('1', 'z');
-    secretMsg = secretMsg.replaceAll('2', 'y');
-    secretMsg = secretMsg.replaceAll('3', 'x');
-    secretMsg = secretMsg.replaceAll('4', 'w');
-    secretMsg = secretMsg.replaceAll('5', 'v');
-    secretMsg = secretMsg.replaceAll('6', 'u');
-    secretMsg = secretMsg.replaceAll('7', 't');
-    secretMsg = secretMsg.replaceAll('8', 's');
-    secretMsg = secretMsg.replaceAll('9', 'r');
-    secretMsg = secretMsg.replaceAll('±', 'q');
-    secretMsg = secretMsg.replaceAll('@', 'p');
-    secretMsg = secretMsg.replaceAll('#', 'o');
-    secretMsg = secretMsg.replaceAll('$', 'n');
-    secretMsg = secretMsg.replaceAll('%', 'm');
-    secretMsg = secretMsg.replaceAll('&', 'l');
-    secretMsg = secretMsg.replaceAll('*', 'k');
-    secretMsg = secretMsg.replaceAll(':', 'j');
-    secretMsg = secretMsg.replaceAll(']', 'i');
-    secretMsg = secretMsg.replaceAll('-', 'h');
-    secretMsg = secretMsg.replaceAll('_', 'g');
-    secretMsg = secretMsg.replaceAll('+', 'f');
-    secretMsg = secretMsg.replaceAll('=', 'e');
-    secretMsg = secretMsg.replaceAll('§', 'd');
-    secretMsg = secretMsg.replaceAll('{', 'c');
-    secretMsg = secretMsg.replaceAll('}', 'b');
-    secretMsg = secretMsg.replaceAll(';', 'a');
+
+    secretMsg = secretMsg.replaceAll('ƕ', 'z');
+    secretMsg = secretMsg.replaceAll('Ƹ', 'y');
+    secretMsg = secretMsg.replaceAll('ʆ', 'x');
+    secretMsg = secretMsg.replaceAll('ʕ', 'w');
+    secretMsg = secretMsg.replaceAll('ʬ', 'v');
+    secretMsg = secretMsg.replaceAll('Ϋ', 'u');
+    secretMsg = secretMsg.replaceAll('ϟ', 't');
+    secretMsg = secretMsg.replaceAll('Ϫ', 's');
+    secretMsg = secretMsg.replaceAll('Ͽ', 'r');
+    secretMsg = secretMsg.replaceAll('Ѧ', 'q');
+    secretMsg = secretMsg.replaceAll('Ѫ', 'p');
+    secretMsg = secretMsg.replaceAll('Ѿ', 'o');
+    secretMsg = secretMsg.replaceAll('҂', 'n');
+    secretMsg = secretMsg.replaceAll('֏', 'm');
+    secretMsg = secretMsg.replaceAll('֎', 'l');
+    secretMsg = secretMsg.replaceAll('ਲ', 'k');
+    secretMsg = secretMsg.replaceAll('૪', 'j');
+    secretMsg = secretMsg.replaceAll('ૐ', 'i');
+    secretMsg = secretMsg.replaceAll('Ⴟ', 'h');
+    secretMsg = secretMsg.replaceAll('ᘡ', 'g');
+    secretMsg = secretMsg.replaceAll('₿', 'f');
+    secretMsg = secretMsg.replaceAll('ᆕ', 'e');
+    secretMsg = secretMsg.replaceAll('ㄓ', 'd');
+    secretMsg = secretMsg.replaceAll('ミ', 'c');
+    secretMsg = secretMsg.replaceAll('ク', 'b');
+    secretMsg = secretMsg.replaceAll('⏈', 'a');
 
     
     secretMsg = secretMsg.replaceAll('1', 'Z');
@@ -151,6 +171,37 @@ function decodeMsg(){
     secretMsg = secretMsg.replaceAll(';', 'A');
     
 
+    //new 
+     
+    
+
+    secretMsg = secretMsg.replaceAll('⎐', '"');
+    secretMsg = secretMsg.replaceAll('⍙', '('); 
+    secretMsg = secretMsg.replaceAll('⌇', ')');
+    secretMsg = secretMsg.replaceAll('⏁', ','); 
+    secretMsg = secretMsg.replaceAll('⊕', '0');
+    secretMsg = secretMsg.replaceAll('ζ', '9');
+    secretMsg = secretMsg.replaceAll('β', '8');
+    secretMsg = secretMsg.replaceAll('α', '7');
+    secretMsg = secretMsg.replaceAll('Ω', '6');
+    secretMsg = secretMsg.replaceAll('Ψ', '5');
+    secretMsg = secretMsg.replaceAll('Φ', '4');
+    secretMsg = secretMsg.replaceAll('Υ', '3');
+    secretMsg = secretMsg.replaceAll('Σ', '2');
+    secretMsg = secretMsg.replaceAll('Ξ', '1');
+    secretMsg = secretMsg.replaceAll('Λ', '.');
+    secretMsg = secretMsg.replaceAll('Θ', '!');
+    secretMsg = secretMsg.replaceAll('⏃', '?');
+    
+    
+    
+    
+
+    
+    
+    
+    
+
     let message2 = []
     
     for (let i = 0; i < secretMsg.length; i++){
@@ -167,7 +218,6 @@ function decodeMsg(){
     message2 = message2.join('');
     console.log(message2)
     message2 = message2.toString();
-
 
     response.style.display = "block";
     p.textContent = message2;
